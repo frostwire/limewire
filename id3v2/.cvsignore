@@ -1,0 +1,6 @@
+.classpath
+.project
+bin
+*.mp3
+id3v2.jar
+.settings

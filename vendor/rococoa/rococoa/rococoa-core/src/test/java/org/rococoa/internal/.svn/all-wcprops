@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal
+END
+NSInvocationMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/NSInvocationMapperTest.java
+END
+NSObjectInvocationHandlerTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/NSObjectInvocationHandlerTest.java
+END
+StringTypeConverterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/!svn/ver/188/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/StringTypeConverterTest.java
+END
+AutoreleaseBatcherTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/AutoreleaseBatcherTest.java
+END
+RococoaObjCObjectByReferenceTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/RococoaObjCObjectByReferenceTest.java
+END
+StaticStructureReturnTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/160/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/StaticStructureReturnTest.java
+END
+OperationBatcherTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/OperationBatcherTest.java
+END
+OCInvocationCallbacksTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/OCInvocationCallbacksTest.java
+END
+RococoaTypeMapperTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/RococoaTypeMapperTest.java
+END
+ObjCObjectTypeConverterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/internal/ObjCObjectTypeConverterTest.java
+END

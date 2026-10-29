@@ -1,0 +1,59 @@
+diff -crB ./include/libtorrent/torrent.hpp /home/pvertenten/Desktop/build/libtorrent-rasterbar-0.14.6/include/libtorrent/torrent.hpp
+*** include/libtorrent/torrent.hpp	2009-02-08 03:13:07.000000000 -0500
+--- include/libtorrent/torrent.hpp	2009-10-26 18:45:11.000000000 -0400
+***************
+*** 401,406 ****
+--- 401,410 ----
+  			= tracker_request::none);
+  		ptime const& last_scrape() const { return m_last_scrape; }
+  
++ #ifndef TORRENT_DISABLE_DHT
++ 		void force_dht_announce();
++ #endif
++ 
+  		// sets the username and password that will be sent to
+  		// the tracker
+  		void set_tracker_login(std::string const& name, std::string const& pw);
+diff -crB ./src/session_impl.cpp /home/pvertenten/Desktop/build/libtorrent-rasterbar-0.14.6/src/session_impl.cpp
+*** src/session_impl.cpp	2009-08-30 03:33:31.000000000 -0400
+--- src/session_impl.cpp	2009-10-26 18:43:18.000000000 -0400
+***************
+*** 2153,2158 ****
+--- 2153,2165 ----
+  		std::list<std::pair<std::string, int> >().swap(m_dht_router_nodes);
+  
+  		m_dht->start(startup_state);
++ 
++ 		// announce all torrents we have to the DHT
++ 		for (torrent_map::const_iterator i = m_torrents.begin()
++ 			, end(m_torrents.end()); i != end; ++i)
++ 		{
++ 			i->second->force_dht_announce();
++ 		}
+  	}
+  
+  	void session_impl::stop_dht()
+diff -crB ./src/torrent.cpp /home/pvertenten/Desktop/build/libtorrent-rasterbar-0.14.6/src/torrent.cpp
+*** src/torrent.cpp	2009-09-07 17:07:16.000000000 -0400
+--- src/torrent.cpp	2009-10-26 18:44:16.000000000 -0400
+***************
+*** 355,360 ****
+--- 355,372 ----
+  			
+  		return m_failed_trackers > 0 || !m_ses.settings().use_dht_as_fallback;
+  	}
++ 
++ 	void torrent::force_dht_announce()
++ 	{
++ 		m_last_dht_announce = min_time();
++ 		// DHT announces are done on the local service
++ 		// discovery timer. Trigger it.
++ 		error_code ec;
++ 		boost::weak_ptr<torrent> self(shared_from_this());
++ 		m_lsd_announce_timer.expires_from_now(seconds(1), ec);
++ 		m_lsd_announce_timer.async_wait(
++ 			bind(&torrent::on_lsd_announce_disp, self, _1));
++ 	}
+  #endif
+  
+  	torrent::~torrent()

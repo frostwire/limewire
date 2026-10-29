@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description url="http://limewire.org/update-site/">
+      The LimeWire update site.
+   </description>
+   <feature url="features/com.limewire.eclipse.plugin_feature_1.0.1.jar" id="com.limewire.eclipse.plugin_feature" version="1.0.1"/>
+   <feature url="features/com.limewire.eclipse.plugin_feature_1.0.2.jar" id="com.limewire.eclipse.plugin_feature" version="1.0.2"/>
+   <feature url="features/com.limewire.eclipse.plugin_feature_1.0.3.jar" id="com.limewire.eclipse.plugin_feature" version="1.0.3"/>
+</site>

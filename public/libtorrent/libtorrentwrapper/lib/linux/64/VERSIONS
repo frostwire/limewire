@@ -1,0 +1,5 @@
+compiler: gcc (GCC) 4.4.2 20091027 (Red Hat 4.4.2-7)
+
+boost 1.41.0
+libtorrent 0.14.7 (patched)
+openssl 0.9.8l (configured /w linux-x86_64 shared no-asm)

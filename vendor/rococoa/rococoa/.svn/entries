@@ -1,0 +1,80 @@
+10
+
+dir
+334
+http://rococoa.googlecode.com/svn/trunk/rococoa
+http://rococoa.googlecode.com/svn
+
+
+
+2009-11-28T19:51:43.161351Z
+334
+dkocher@sudo.ch
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+e1dc94fc-aea3-11de-8db9-a33e7b47b29e
+
+rococoa-contrib
+dir
+
+rococoa-functionaltest
+dir
+
+rococoa-cocoa
+dir
+
+pom.xml
+file
+
+
+
+
+2009-12-10T21:17:05.000000Z
+eb7f9c888b81e3afd6011c8ffad457d0
+2009-11-22T18:30:14.852941Z
+329
+olivier.chafik
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+910
+
+rococoa-core
+dir
+
+rococoa-auto
+dir
+
+rococoa-parent
+dir
+

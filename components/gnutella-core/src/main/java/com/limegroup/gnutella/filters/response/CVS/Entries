@@ -1,0 +1,18 @@
+/.cvsignore/1.1/Fri Jan 30 19:22:42 2009//
+/AltLocFilter.java/1.1/Fri Oct 16 14:25:21 2009//
+/CompoundFilter.java/1.2/Wed May 12 18:01:50 2010//
+/FilterFactory.java/1.2/Wed May 12 18:01:50 2010//
+/FilterFactoryImpl.java/1.2/Wed May 12 18:01:50 2010//
+/LimeWireFiltersResponseModule.java/1.2/Wed May 12 18:01:50 2010//
+/MandragoreWormFilter.java/1.2/Thu Nov 20 18:25:29 2008//
+/MutableGUIDFilter.java/1.3/Mon Dec 14 18:10:13 2009//
+/NoExtensionFilter.java/1.1/Wed Feb 17 15:10:02 2010//
+/ProgramsFilter.java/1.9/Wed May 12 18:01:50 2010//
+/ResponseFilter.java/1.1/Tue Nov 11 21:23:56 2008//
+/ResponseQueryFilter.java/1.4/Thu Nov 20 19:32:20 2008//
+/ResponseTypeFilter.java/1.4/Thu Nov 20 19:32:20 2008//
+/SearchResultFilter.java/1.2/Wed May 12 18:01:50 2010//
+/SecureResultFilter.java/1.4/Thu Nov 20 19:32:20 2008//
+/WhiteListUpdateUrnFilter.java/1.2/Thu Nov 20 19:32:20 2008//
+/XMLDocFilter.java/1.4/Wed May 12 18:01:50 2010//
+D

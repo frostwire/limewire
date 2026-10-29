@@ -1,0 +1,26 @@
+/.cvsignore/1.1/Fri Nov  8 16:34:38 2002//
+/GenericXmlDocument.java/1.2/Wed Nov 18 19:49:34 2009//
+/LimeWireXmlModule.java/1.1/Fri Jun 26 22:00:15 2009//
+/LimeXMLDocument.java/1.110/Mon Jul  6 02:26:57 2009//
+/LimeXMLDocumentFactory.java/1.1/Thu Aug 16 18:06:32 2007//
+/LimeXMLDocumentFactoryImpl.java/1.9/Tue Sep 29 20:23:43 2009//
+/LimeXMLDocumentHelper.java/1.38/Thu Apr  8 18:46:26 2010//
+/LimeXMLNames.java/1.9/Wed Nov 11 00:12:17 2009//
+/LimeXMLProperties.java/1.30/Mon Jun  8 19:57:45 2009//
+/LimeXMLReplyCollection.java/1.114/Wed Nov 11 00:12:17 2009//
+/LimeXMLReplyCollectionFactory.java/1.2/Tue Dec  4 18:17:18 2007//
+/LimeXMLReplyCollectionFactoryImpl.java/1.8/Thu Sep  3 20:22:03 2009//
+/LimeXMLSchema.java/1.34/Mon Jun  8 19:57:45 2009//
+/LimeXMLSchemaFieldExtractor.java/1.19/Mon Apr 28 18:44:59 2008//
+/LimeXMLSchemaRepository.java/1.25/Mon Jun  8 19:57:45 2009//
+/LimeXMLUtils.java/1.71/Fri Feb 26 20:51:11 2010//
+/SchemaFieldInfo.java/1.15/Mon Jun  8 19:57:45 2009//
+/SchemaNotFoundException.java/1.2/Mon Jun  8 19:57:45 2009//
+/SchemaReplyCollectionMapper.java/1.36/Thu Sep  3 20:22:03 2009//
+/SerialXml.java/1.2/Tue Feb  5 17:32:30 2008//
+/TypeConverter.java/1.8/Mon Jun  8 19:57:45 2009//
+/XMLParsingUtils.java/1.16/Mon Jul  6 02:26:57 2009//
+/XMLStringUtils.java/1.17/Mon Jun  8 19:57:45 2009//
+/XmlController.java/1.2/Sat Jun 27 14:28:03 2009//
+/string_conventions.txt/1.1/Wed May  2 21:04:46 2001//
+D

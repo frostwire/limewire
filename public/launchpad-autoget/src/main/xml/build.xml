@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<project name="TranslationsTest" default="main" basedir=".">
+
+	<!--
+	This should contain the following properties:
+	 - username
+	 - password
+	 - passwordEmail
+	 - email
+	-->
+	<property file="user.properties" />
+  
+	<taskdef 
+		name="translations" 
+		classname="com.limewire.translations.TranslationsAntTask"
+		classpath="../../../bin:../../../lib/activation.jar:../../../lib/commons-codec-1.3.jar:../../../lib/commons-httpclient-3.1-rc1.jar:../../../lib/commons-logging-1.1.jar:../../../lib/commons-logging-adapters-1.1.jar:../../../lib/commons-logging-api-1.1.jar:../../../lib/dsn.jar:../../../lib/imap.jar:../../../lib/mailapi.jar:../../../lib/pop3.jar:../../../lib/smtp.jar"
+	/>
+
+  <target name="main">
+  	<translations
+			username="${username}"
+			password="${password}"
+			passwordEmail="${passwordEmail}"
+			email="${email}"
+  		group="limewire"
+  		server="cyrus.limewire.com"
+  	/>
+  </target>
+</project>

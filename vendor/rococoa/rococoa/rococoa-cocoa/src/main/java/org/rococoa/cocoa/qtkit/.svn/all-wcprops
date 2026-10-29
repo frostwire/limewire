@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/329/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit
+END
+QTMovieView.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/329/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTMovieView.java
+END
+QTTimeRange.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/161/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTTimeRange.java
+END
+MovieComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/161/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/MovieComponent.java
+END
+QTTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/161/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTTime.java
+END
+QTMedia.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/329/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTMedia.java
+END
+QTMovie.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/329/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTMovie.java
+END
+QTTrack.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/329/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTTrack.java
+END
+QTKit.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/161/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTKit.java
+END
+QTTimeByReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/161/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/qtkit/QTTimeByReference.java
+END

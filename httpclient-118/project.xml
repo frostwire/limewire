@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project>
+  <pomVersion>3</pomVersion>
+  <name>HttpClient</name>
+  <id>commons-httpclient</id>
+  <gumpRepositoryId>jakarta-commons-httpclient</gumpRepositoryId>
+  <inceptionYear>2001</inceptionYear>
+  <currentVersion>2.0-rc2</currentVersion>
+  <package>org.apache.commons.httpclient</package>
+
+  <organization>
+    <name>Apache Software Foundation</name>
+    <url>http://jakarta.apache.org/</url>
+    <logo>http://jakarta.apache.org/commons/images/jakarta-logo-blue.gif</logo>
+  </organization>
+
+
+  <shortDescription>Jakarta Commons HttpClient</shortDescription>
+  <description>
+    The HttpClient  component supports the client-side of RFC 1945 (HTTP/1.0)  and RFC 2616 (HTTP/1.1) , several related specifications (RFC 2109 (Cookies) , RFC 2617 (HTTP Authentication) , etc.), and provides a framework by which new request types (methods) or HTTP extensions can be created easily.
+  </description>
+
+  <logo>/images/httpclient_logo.png</logo>
+  <url>http://jakarta.apache.org/commons/httpclient/</url>
+  <issueTrackingUrl><![CDATA[http://nagoya.apache.org/bugzilla/buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;component=HttpClient]]></issueTrackingUrl>
+
+  <siteAddress>jakarta.apache.org</siteAddress>
+  <siteDirectory>/www/jakarta.apache.org/commons/httpclient/</siteDirectory>
+  <distributionDirectory>/www/jakarta.apache.org/builds/jakarta-commons/httpclient</distributionDirectory>
+  <repository>
+    <connection>scm:cvs:pserver:anoncvs@cvs.apache.org:/home/cvspublic:jakarta-commons/httpclient/</connection>
+    <url>http://cvs.apache.org/viewcvs.cgi/jakarta-commons/httpclient/</url>
+  </repository>
+
+  <versions>
+    <version>
+      <id>rc2</id>
+      <name>2.0-rc2</name>
+      <tag>HTTPCLIENT_2_0_RC2</tag>
+    </version>
+    <version>
+      <id>rc1</id>
+      <name>2.0-rc1</name>
+      <tag>HTTPCLIENT_2_0_RC1</tag>
+    </version>
+    <version>
+      <id>b2</id>
+      <name>2.0-beta2</name>
+      <tag>HTTPCLIENT_2_0_BETA2</tag>
+    </version>
+    <version>
+      <id>b1</id>
+      <name>2.0-beta1</name>
+      <tag>HTTPCLIENT_2_0_BETA1</tag>
+    </version>
+    <version>
+      <id>a3</id>
+      <name>2.0-alpha3</name>
+      <tag>HTTPCLIENT_2_0_ALPHA3</tag>
+    </version>
+    <version>
+      <id>a2</id>
+      <name>2.0-alpha2</name>
+      <tag>HTTPCLIENT_2_0_ALPHA2</tag>
+    </version>
+    <version>
+      <id>a1</id>
+      <name>2.0-alpha1</name>
+      <tag>HTTPCLIENT_2_0_ALPHA1</tag>
+    </version>
+  </versions>
+
+  <mailingLists>
+    <mailingList>
+      <name>HttpClient Mailing List</name>
+      <subscribe> commons-httpclient-dev-subscribe@jakarta.apache.org </subscribe>
+      <unsubscribe> commons-httpclient-dev-unsubscribe@jakarta.apache.org </unsubscribe>
+      <archive>http://nagoya.apache.org/eyebrowse/SummarizeList?listId=128</archive>
+    </mailingList>
+    <mailingList>
+      <name>Commons Developer List</name>
+      <subscribe>commons-dev-subscribe@jakarta.apache.org</subscribe>
+      <unsubscribe>commons-dev-unsubscribe@jakarta.apache.org</unsubscribe>
+      <archive>http://nagoya.apache.org/eyebrowse/SummarizeList?listId=15</archive>
+    </mailingList>
+    <mailingList>
+      <name>Commons User List</name>
+      <subscribe>commons-user-subscribe@jakarta.apache.org</subscribe>
+      <unsubscribe>commons-user-unsubscribe@jakarta.apache.org</unsubscribe>
+      <archive>http://nagoya.apache.org/eyebrowse/SummarizeList?listId=105</archive>
+    </mailingList>
+  </mailingLists>
+
+  <developers>
+    <developer>
+      <name>Michael Becke</name>
+      <id>mbecke</id>
+      <email>mbecke@apache.org</email>
+      <organization></organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Jeff Dever</name>
+      <id>jsdever</id>
+      <email>jsdever@apache.org</email>
+      <organization>Independent consultant</organization>
+      <roles>
+        <role>2.0 Release Prime</role>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>dIon Gillard</name>
+      <id>dion</id>
+      <email>dion@apache.org</email>
+      <organization>Multitask Consulting</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Ortwin Glueck</name>
+      <id>oglueck</id>
+      <email>oglueck@apache.org</email>
+      <organization>Nose Applied Intelligence AG</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Sung-Gu</name>
+      <id>jericho</id>
+      <email>jericho@apache.org</email>
+      <organization/>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Oleg Kalnichevski</name>
+      <id>olegk</id>
+      <email>olegk@apache.org</email>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Sean C. Sullivan</name>
+      <id>sullis</id>
+      <email>sullis@apache.org</email>
+      <organization>Independent consultant</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Adrian Sutton</name>
+      <id>adrian</id>
+      <email>adrian.sutton@ephox.com</email>
+      <organization>Intencha</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+    <developer>
+      <name>Rodney Waldhoff</name>
+      <id>rwaldhoff</id>
+      <email>rwaldhoff@apache</email>
+      <organization>Britannica</organization>
+      <roles>
+        <role>Java Developer</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <contributors>
+    <contributor>
+      <name>Armando Antï¿œn</name>
+      <email>armando.anton@newknow.com</email>
+    </contributor>
+    <contributor>
+      <name>Ola Berg</name>
+      <email></email>
+    </contributor>
+    <contributor>
+      <name>Mike Bowler</name>
+      <email></email>
+    </contributor>
+    <contributor>
+      <name>Eric Johnson</name>
+      <email>eric@tibco.com</email>
+    </contributor>
+    <contributor>
+      <name>Ryan Lubke</name>
+      <email>Ryan.Lubke@Sun.COM</email>
+    </contributor>
+    <contributor>
+      <name>Sam Maloney</name>
+      <email>sam.maloney@filogix.com</email>
+    </contributor>
+    <contributor>
+      <name>Rob Di Marco</name>
+      <email>rdimarco@hmsonline.com</email>
+    </contributor>
+    <contributor>
+      <name>Juergen Pill</name>
+      <email>Juergen.Pill@softwareag.com</email>
+    </contributor>
+    <contributor>
+      <name>Laura Werner</name>
+      <email>laura@lwerner.org</email>
+    </contributor>
+  </contributors>
+
+  <dependencies>
+    <dependency>
+      <id>commons-logging</id>
+      <version>1.0.3</version>
+      <url>http://jakarta.apache.org/commons/logging.html</url>
+    </dependency>
+  </dependencies>
+
+    <build>
+    <nagEmailAddress>commons-httpclient-dev@jakarta.apache.org</nagEmailAddress>
+    <sourceDirectory>src/java</sourceDirectory>
+    <unitTestSourceDirectory>src/test</unitTestSourceDirectory>
+    <integrationUnitTestSourceDirectory/>
+    <aspectSourceDirectory/>
+
+        <unitTest>
+            <includes>
+                <include>**/TestNoHost.java</include>
+            </includes>
+        </unitTest>
+	<jars></jars>
+    </build>
+
+</project>

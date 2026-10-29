@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/jars/collection.jar"/>
+	<classpathentry kind="lib" path="lib/jars/concurrent.jar"/>
+	<classpathentry kind="lib" path="lib/jars/inject.jar"/>
+	<classpathentry kind="lib" path="lib/jars/io.jar"/>
+	<classpathentry kind="lib" path="lib/jars/logging.jar"/>
+	<classpathentry kind="lib" path="lib/jars/service.jar"/>
+	<classpathentry kind="lib" path="lib/jars/commonUtils.jar"/>
+	<classpathentry kind="lib" path="lib/jars/inspectable.jar"/>
+	<classpathentry kind="lib" path="lib/jars/mojito.jar"/>
+	<classpathentry kind="lib" path="lib/jars/security.jar"/>
+	<classpathentry kind="lib" path="lib/jars/setting.jar"/>
+	<classpathentry kind="lib" path="lib/jars/statistic.jar"/>
+	<classpathentry kind="lib" path="lib/jars/commons-logging.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

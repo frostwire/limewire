@@ -1,0 +1,91 @@
+
+Stop and Start share file
+
+
+----------------------------------------------------------------------
+
+G2
+	Cached query keys fix qkr/qka
+	Q2/NAT
+	
+	If PI/RELAY recved with UDP address of directly connected host (but not from directly	 connected host), disconnect youngest link
+	ASSERT size of udp being sent, make sure QH does not overflow
+	
+Now	
+	IPrefs::SetSpeedUp
+	IPrefs::SetSpeedDown
+	Set upload speed only if uploaded, take other speed stuff out
+	
+	table % full doesnt get too large
+	sending/recving 64kb packets
+
+
+G2 Questions
+	closed clusters?
+	Kill BE before it gets off ground, bad idea from G1 devs
+	Screw bitprints
+	Send null qka on qkr to child, signal remove from global cache
+	Fixing - network disable still being sent when header is same
+
+
+Rainy Day
+	Unicode / UTF-8 support
+	Advanced Query matching
+	Advance error logging
+	http templates as resources
+	Winsock Error Code to String
+	Accurate network stats
+	Move filters out of dna
+	> 2gb files
+	PacketType/Sec using map<CString, int>
+	HTTP request Host: without port, read location header for redirect
+
+To Depreciate ( can be done outside dna )
+	INetwork::GetNodePacketsPing
+	INetwork::GetNodePacketsPong
+	INetwork::GetNodePacketsQuery
+	INetwork::GetNodePacketsQueryHit
+	INetwork::GetNodePacketsPush
+	INetwork::GetNodePacketsTotal
+	INetwork::GetNodePacketsDown
+	INetwork::GetNodePacketsUp
+	INetwork::GetNodePacketsDropped
+	
+	ISearch::RefineSearch
+	ISearch::SetFiltering
+	ISearch::FilterSize
+	ISearch::FilterSpeed
+	
+	IPrefs::GetHostServers
+	IPrefs::SetHostServers
+	IPrefs::GetScreenedNodes // use block list
+	IPrefs::SetScreenedNodes
+
+
+
+IChat
+	CreateRoom(name) RoomID 
+	CloseRoom(RoomID)
+	GetRoomIDs() RoomIDs
+
+	SearchRooms(filter) SearchID 
+	OnSearchResult(ResultID)
+	GetRoomName(ResultID) String
+	GetRoomSize(ResultID) String 
+	JoinRoom(ResultID) RoomID
+
+	OnRoomEvent(RoomID, Event, Data)
+	SendRoomMessage(RoomID, UserID, Message)
+	OnRecvRoomMessage(RoomID, UserID, Message)
+	GetRoomUserIDs() UserIDs
+
+	SendDirectMessage(IP:Port, Message)
+	OnRecvDirectMessage(IP:Port, Message)
+
+
+
+	
+	
+
+
+

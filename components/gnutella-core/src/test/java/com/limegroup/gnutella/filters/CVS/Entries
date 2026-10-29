@@ -1,0 +1,17 @@
+/BlacklistServerTest.java/1.5/Thu Feb 11 21:20:27 2010//
+/ClientGuidFilterTest.java/1.1/Thu Mar 11 14:33:15 2010//
+/DuplicateFilterTest.java/1.19/Fri Feb 26 17:40:18 2010//
+/GUIDFilterTest.java/1.13/Fri Sep  7 17:49:22 2007//
+/GreedyQueryFilterTest.java/1.9/Mon Apr 28 18:45:00 2008//
+/HashFilterTest.java/1.7/Mon Feb  2 23:24:13 2009//
+/IPFilterTest.java/1.24/Tue Aug 18 22:15:23 2009/-kk/
+/IPListTest.java/1.11/Thu Mar 26 23:00:24 2009//
+/KeywordFilterTest.java/1.25/Sat Dec  5 17:24:22 2009//
+/PhraseFilterTest.java/1.2/Fri Dec 11 19:59:49 2009//
+/RepetitiveQueryFilterTest.java/1.5/Wed Mar  3 15:35:21 2010//
+/RequeryFilterTest.java/1.12/Wed Dec  3 22:02:04 2008//
+/SameAltLocsFilterTest.java/1.1/Tue Mar 30 00:08:51 2010//
+/SpamReplyFilterTest.java/1.11/Tue Sep 11 19:50:29 2007//
+/URNBlacklistManagerImplTest.java/1.4/Mon Aug 24 21:05:21 2009//
+/URNFilterTest.java/1.4/Tue May 11 10:51:24 2010//
+D

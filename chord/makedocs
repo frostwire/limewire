@@ -1,0 +1,2 @@
+rm -rf doc
+javadoc -header "</EM>Chord API<EM>" -sourcepath .:../core -classpath ../core:../core/lib/collections.jar -source 1.4 -d doc edu.ucr.cs.chord edu.ucr.cs.chord.filelookup

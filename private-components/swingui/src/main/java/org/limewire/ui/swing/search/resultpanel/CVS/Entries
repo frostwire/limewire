@@ -1,0 +1,20 @@
+/BaseResultPanel.java/1.164/Wed May  5 16:10:01 2010//
+/BaseResultPanelFactory.java/1.2/Tue Mar 24 22:13:31 2009//
+/CopyMagnetLinkToClipboardAction.java/1.7/Wed Feb 17 14:45:16 2010//
+/DownloadHandler.java/1.4/Fri Feb 13 16:03:51 2009//
+/DownloadHandlerImpl.java/1.10/Tue Dec  8 17:37:35 2009//
+/DownloadPreprocessor.java/1.1/Wed Dec  3 20:45:09 2008//
+/LicenseWarningDownloadPreprocessor.java/1.6/Tue Jun 30 21:56:58 2009//
+/LimeWireUiSearchResultPanelModule.java/1.2/Sat Jul  4 01:00:15 2009//
+/ResultsTable.java/1.5/Thu Sep  3 21:31:21 2009//
+/ResultsTableFormat.java/1.34/Wed Mar 31 12:22:33 2010//
+/ResultsTableFormatFactory.java/1.4/Tue Apr 27 18:26:51 2010//
+/SearchHeading.java/1.2/Mon Jun  8 19:52:44 2009//
+/SearchHeadingDocumentBuilder.java/1.4/Fri Dec 12 22:36:26 2008//
+/SearchHeadingDocumentBuilderImpl.java/1.22/Tue Dec  8 19:06:46 2009//
+/SearchPopupHandler.java/1.10/Thu Jun 25 15:21:56 2009//
+/SearchResultMenu.java/1.50/Mon Mar  8 15:07:45 2010//
+/SearchResultMenuFactory.java/1.1/Thu Jun 25 15:21:56 2009//
+/SearchResultTruncator.java/1.1/Wed Nov 19 17:55:30 2008//
+/SearchResultTruncatorImpl.java/1.10/Sat Jul  4 01:00:15 2009//
+D

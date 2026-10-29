@@ -1,0 +1,10 @@
+# first start one node without any parameters. Then start more nodes
+# with a port parameters. Default port is 8888, so don't use that.
+# Like this:
+
+# run
+# run 9999
+# run 7777
+# run 6666
+
+java -enableassertions -classpath .:../core:../core/lib/collections.jar edu.ucr.cs.chord.Main $1

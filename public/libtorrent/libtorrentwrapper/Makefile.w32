@@ -1,0 +1,40 @@
+CXXFLAGS = -O2 -g -Wall -fmessage-length=0 
+
+LIB_DIR = lib/windows
+
+LIBRARY = libtorrentwrapper.dll
+OPTIONS = -DBOOST_ALL_NO_LIB -DBOOST_ASIO_HASH_MAP_BUCKETS=1021 -DBOOST_FILESYSTEM_STATIC_LINK=1 -DBOOST_MULTI_INDEX_DISABLE_SERIALIZATION -DBOOST_SYSTEM_STATIC_LINK=1 -DBOOST_THREAD_USE_LIB -DBOOST_THREAD_USE_LIB=1 -DNDEBUG -DTORRENT_DISABLE_GEO_IP -DTORRENT_DISABLE_INVARIANT_CHECKS -DTORRENT_USE_OPENSSL -DUNICODE -DWIN32 -DWIN32_LEAN_AND_MEAN -D_CRT_SECURE_NO_DEPRECATE -D_FILE_OFFSET_BITS=64 -D_SCL_SECURE_NO_DEPRECATE -D_UNICODE -D_WIN32 -D_WIN32_WINNT=0x0500 -D__USE_W32_SOCKETS -DTORRENT_DISABLE_GEO_IP -DTORRENT_NO_DEPRECATE
+OBJS = libtorrentwrapper.obj
+
+all : clean  compile
+
+static9: 
+    $(CXX) -TP \
+           /O2 \
+           /Ob2 \
+           /W3 \
+           /GR \
+           /MD \
+           /Zc:forScope \
+           /Zc:wchar_t \
+           /Ogiy \
+           /Gs \
+           /Ot \
+           /GB \
+           /Op \
+           /wd4675 \
+           /EHsc \
+           /Zc:forScope \
+           /Zc:wchar_t \
+           /wd4503 \
+           /LD /I include src/libtorrentwrapper.cpp $(OPTIONS) /link /LIBPATH:$(LIB_DIR) gdi32.lib user32.lib advapi32.lib ssleay32.lib libeay32.lib libboost_system-vc90-mt-1_39.lib libboost_thread-vc90-mt-1_39.lib libboost_filesystem-vc90-mt-1_39.lib libboost_date_time-vc90-mt-1_39.lib libtorrent.lib
+	mt -manifest libtorrentwrapper.dll.manifest -outputresource:libtorrentwrapper.dll;2
+    
+compile : static9
+
+copylib : all
+    copy /y $(LIBRARY) ..\..\..\limewire\lib\native\windows\torrent-wrapper.dll
+    
+clean :
+    del /f $(OBJS) $(TARGET) $(LIBRARY) a.out
+

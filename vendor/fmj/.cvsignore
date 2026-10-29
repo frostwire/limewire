@@ -1,0 +1,13 @@
+.DS_Store
+bin.eclipse
+build
+bin
+sftp.txt
+dist
+TEST-*.txt
+fmj.larsontechnologies.com.properties
+out.*
+*.so
+*.51
+*.52
+*.49

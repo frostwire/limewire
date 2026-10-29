@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Tue Oct 02 17:19:00 EDT 2007
+onejar.license.required=false
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=launchpad-autoget.jar
+manifest.mergeall=true
+manifest.mainclass=com.limewire.translations.Main
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<jar|ant-1.6.5.jar>;<jar|avalon-framework-4.1.3.jar>;<jar|commons-codec-20041127.091804.jar>;<jar|commons-httpclient-3.1-beta1.jar>;<jar|commons-logging-1.1.jar>;<jar|servlet-api-2.3.jar>;<jar|junit-3.8.1.jar>;<jar|log4j-1.2.12.jar>;<jar|logkit-1.0.1.jar>;<jar|activation.jar>;<jar|commons-codec.jar>;<jar|commons-httpclient.jar>;<jar|commons-logging.jar>;<jar|commons-logging-adapters.jar>;<jar|commons-logging-api.jar>;<jar|dsn.jar>;<jar|imap.jar>;<jar|junit.jar>;<jar|mailapi.jar>;<jar|pop3.jar>;<jar|smtp.jar>
+includes=

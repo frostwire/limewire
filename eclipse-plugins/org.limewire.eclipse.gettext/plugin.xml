@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            id="org.limewire.eclipse.gettext.actionSet"
+            label="Gettext Refactorings"
+            visible="true">
+         <action
+               class="org.limewire.eclipse.gettext.ui.actions.ConvertStringsAction"
+               id="org.limewire.eclipse.gettext.convertStrings"
+               label="Convert Strings to Gettext"
+               menubarPath="org.eclipse.jdt.ui.source.menu/externalizeGroup">
+            <enablement>
+               <objectClass
+                     name="org.eclipse.jdt.core.IJavaElement">
+               </objectClass>
+            </enablement>
+         </action>
+         <menu
+               id="org.eclipse.jdt.ui.source.menu"
+               label="Source">
+            <separator
+                  name="externalizeGroup">
+            </separator>
+         </menu>
+      </actionSet>
+   </extension>
+
+</plugin>

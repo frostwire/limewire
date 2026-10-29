@@ -1,0 +1,24 @@
+/IpFilterCallback.java/1.2/Mon Nov  2 23:48:13 2009//
+/LibTorrent.java/1.25/Wed May 12 18:01:50 2010//
+/LibTorrentAlert.java/1.7/Fri Oct  2 19:42:45 2009//
+/LibTorrentAnnounceEntry.java/1.6/Wed May 12 22:39:05 2010//
+/LibTorrentFileEntry.java/1.4/Tue May  4 21:40:02 2010//
+/LibTorrentInfo.java/1.5/Wed May 12 22:39:05 2010//
+/LibTorrentIpPort.java/1.1/Mon Oct 26 18:55:22 2009//
+/LibTorrentParams.java/1.3/Sat Mar 27 00:26:44 2010//
+/LibTorrentPeer.java/1.6/Fri Dec  4 19:57:20 2009//
+/LibTorrentPiecesInfo.java/1.6/Mon Nov 30 17:12:16 2009//
+/LibTorrentPiecesInfoContainer.java/1.1/Tue Nov 17 22:35:24 2009//
+/LibTorrentProxySetting.java/1.2/Tue Jan 12 23:47:03 2010//
+/LibTorrentProxySettingType.java/1.1/Mon Nov  9 15:36:45 2009//
+/LibTorrentSession.java/1.14/Thu May 13 17:37:49 2010//
+/LibTorrentSettings.java/1.7/Thu Nov  5 22:47:09 2009//
+/LibTorrentState.java/1.2/Thu May 21 17:03:38 2009//
+/LibTorrentStatus.java/1.13/Tue Nov 17 22:35:24 2009//
+/LibTorrentWrapper.java/1.43/Wed May 12 18:01:50 2010//
+/TorrentImpl.java/1.49/Mon May  3 18:43:11 2010//
+/TorrentInfoImpl.java/1.4/Mon Mar 29 18:33:01 2010//
+/TrackerScrapeRequestCallback.java/1.2/Wed May 12 18:01:50 2010//
+/WrapperStatus.java/1.2/Thu May 21 17:03:38 2009//
+/package.html/1.1/Fri Oct  2 19:42:45 2009//
+D

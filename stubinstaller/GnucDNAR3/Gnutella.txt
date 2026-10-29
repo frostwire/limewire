@@ -1,0 +1,109 @@
+
+Ping Received
+   If from 1 hop away reply with pong
+   Else Ignoe
+   
+Pong Receive
+   If meant for local read
+   Else ignore
+   
+Timer
+   Send UltraPong to random child
+
+
+Hops setup as gathered from LW
+
+	Leaf Query T:3, H:0 -> Ultrapeer
+	Ultrapeer Query T:3, H:1 -> Ultrapeer
+	Ultrapeer Query T:2, H:2 -> Ultrapeer
+	Ultrapeer Query T:1, H:3 -> Ultrapeer (last hop qrp)
+	Ultrapeer Query T:0, H:4 -> Leaf (ttl 0 should not be forwarded, but it is)
+	
+	Leaf QueryHit T:4, H:0 -> Ultrapeer
+	Ultrapeer QueryHit T:3, H:1 -> Ultrapeer
+	Ultrapeer QueryHit T:2, H:2 -> Ultrapeer
+	Ultrapeer QueryHit T:1, H:3 -> Ultrapeer
+	Ultrapeer QueryHit T:2, H:4 -> Leaf (ttl 2?)
+
+
+BEAR/7v1 // TCP Connect Back
+BEAR/11v1 // LGDQ Query Status Req
+LIME/21v1 // Push Proxy Req
+GTKG/7v2 // UDP Connect Back
+	
+Splitting Packets
+	Greater than 16k in size disconnect
+
+////////////////////////////////////////////////////////////////////	
+	
+// Node Stats Vendor Message
+GNUC/60v1
+	LeafMax		(2 bytes)
+	LeafCount	(2 bytes)
+	Uptime		(4 bytes
+	Cpu			(2 bytes)
+	Mem			(2 bytes)
+	Flags		(1 byte)
+		Ultrapeer Able
+		Router
+		TCP Firewall
+		UDP Firewall
+	
+// Mode Change Request Vendor Message
+GNUC/61v1
+	Flags		(1 byte)
+		Ultrapeer
+	
+// Mode Change Ack Vendor Message
+GNUC/62v1
+	Flags		(1 byte)
+		Accept
+		Deny
+	
+////////////////////////////////////////////////////////////////////
+
+Balancing System
+
+	Start in Child Mode
+	
+	Upgrading
+		When requested by hub
+			No Firewall
+			No Router (g2 only)
+			Full UDP
+			Windows NT
+			40 minutes from downgrade
+			Bandwidth Marker reached (20 KB/s up or down)
+			Last upgrade timer reset, so if new hub fills up quick another upgrade can fire
+	
+		Gnutella Temporary
+			If ultrapeer-needed = true
+			If all ultrapeer criteria met
+			Upgrade
+	
+		No connections for 10 minutes
+			No criteria to upgrade
+			Normal downgrade will filter out bad upgrades
+		
+	Requesting Upgrade
+		Hub more than 90% full for 40 minutes
+		Node with highest uptime and leaf max selected
+	
+	Downgrading
+		Hub connections present
+		Less than 10 children for 10 minutes
+			Downgrade 
+		Less than 70% full for 40 minutes
+		
+		
+Preferencing
+	Send only dna hosts to leaves (cluster leaves, hubs integrated)
+
+	Hubs
+		Continue trying connects until half dna
+
+	Dropping
+		If connects less than 50% dna
+			Drop youngest non-dna
+		Else
+			Drop youngest

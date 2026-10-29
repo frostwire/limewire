@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 63
+.classpath
+.project
+testdata
+.settings
+librococoa.dylib
+target
+
+END

@@ -1,0 +1,16 @@
+/EmptyFrameException.java/1.1/Wed Feb  6 21:03:24 2008//
+/FieldDataInvalidException.java/1.1/Wed Feb  6 21:03:24 2008//
+/InvalidDataTypeException.java/1.1/Wed Feb  6 21:03:24 2008//
+/InvalidFrameException.java/1.1/Wed Feb  6 21:03:24 2008//
+/InvalidFrameIdentifierException.java/1.1/Wed Feb  6 21:03:24 2008//
+/InvalidTagException.java/1.1/Wed Feb  6 21:03:24 2008//
+/KeyNotFoundException.java/1.1/Wed Feb  6 21:03:24 2008//
+/Tag.java/1.1/Wed Feb  6 21:03:24 2008//
+/TagException.java/1.1/Wed Feb  6 21:03:24 2008//
+/TagField.java/1.1/Wed Feb  6 21:03:24 2008//
+/TagFieldKey.java/1.2/Wed Feb  6 21:36:54 2008//
+/TagNotFoundException.java/1.1/Wed Feb  6 21:03:24 2008//
+/TagOptionSingleton.java/1.1/Wed Feb  6 21:03:24 2008//
+/TagTextField.java/1.1/Wed Feb  6 21:03:24 2008//
+/Tagger.java/1.1/Wed Feb  6 21:03:24 2008//
+D

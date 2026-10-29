@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/332/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/foundation
+END
+NSLocale.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/332/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/foundation/NSLocale.java
+END
+NSTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/332/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/foundation/NSTimer.java
+END
+NSDateFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/332/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/foundation/NSDateFormatter.java
+END
+NSFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/332/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/foundation/NSFormatter.java
+END
+NSCoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/332/trunk/rococoa/rococoa-cocoa/src/main/java/org/rococoa/cocoa/foundation/NSCoder.java
+END

@@ -1,0 +1,114 @@
+// !$*UTF8*$!
+{
+	08FB7793FE84155DC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeTarget = F9B18D9E0DB3EFE400F89148 /* BuildAll */;
+		codeSenseManager = 78DA65AF12A439250067D885 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					1233,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXSymbolsDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXSymbolsDataSource_SymbolNameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					16,
+					200,
+					50,
+					1413,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXSymbolsDataSource_SymbolTypeIconID,
+					PBXSymbolsDataSource_SymbolNameID,
+					PBXSymbolsDataSource_SymbolTypeID,
+					PBXSymbolsDataSource_ReferenceNameID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 331767921;
+			PBXWorkspaceStateSaveDate = 331767921;
+		};
+		perUserProjectItems = {
+			78B6A69113C665BF0024CBF7 /* PBXTextBookmark */ = 78B6A69113C665BF0024CBF7 /* PBXTextBookmark */;
+			78DA65B912A43F390067D885 /* PBXTextBookmark */ = 78DA65B912A43F390067D885 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 78DA65AE12A439250067D885 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	78B6A69113C665BF0024CBF7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F9657FAE0DA1454100F02016 /* GURLjnilib.c */;
+		name = "GURLjnilib.c: 11";
+		rLen = 111;
+		rLoc = 250;
+		rType = 0;
+		vrLen = 1028;
+		vrLoc = 1824;
+	};
+	78DA65AE12A439250067D885 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	78DA65AF12A439250067D885 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	78DA65B912A43F390067D885 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F9657FAE0DA1454100F02016 /* GURLjnilib.c */;
+		name = "GURLjnilib.c: 11";
+		rLen = 111;
+		rLoc = 250;
+		rType = 0;
+		vrLen = 1408;
+		vrLoc = 1827;
+	};
+	F95A28BE0DCBA48F00468CF3 /* GURL Leopard */ = {
+		activeExec = 0;
+	};
+	F95A29D10DCBB90D00468CF3 /* SystemUtilities Leopard */ = {
+		activeExec = 0;
+	};
+	F9657FAE0DA1454100F02016 /* GURLjnilib.c */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1411, 1352}}";
+			sepNavSelRange = "{250, 111}";
+			sepNavVisRange = "{1824, 1028}";
+			sepNavWindowFrame = "{{15, 419}, {1157, 634}}";
+		};
+	};
+	F96581080DA1764500F02016 /* Dock Leopard */ = {
+		activeExec = 0;
+	};
+	F96C68A40DCEAD97006A4F2B /* MacOSXUtils Leopard */ = {
+		activeExec = 0;
+	};
+	F9B18D9E0DB3EFE400F89148 /* BuildAll */ = {
+		activeExec = 0;
+	};
+}

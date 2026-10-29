@@ -1,0 +1,2 @@
+java -classpath .:../core:../core/lib/collections.jar edu.ucr.cs.chord.filelookup.LocalFileLookupNode $2 $1
+

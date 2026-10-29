@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="src" path="src/main/xml"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.maven.ide.eclipse.MAVEN2_CLASSPATH_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/activation.jar"/>
+	<classpathentry kind="lib" path="lib/commons-codec.jar"/>
+	<classpathentry kind="lib" path="lib/commons-httpclient.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-adapters.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-api.jar"/>
+	<classpathentry kind="lib" path="lib/dsn.jar"/>
+	<classpathentry kind="lib" path="lib/imap.jar"/>
+	<classpathentry kind="lib" path="lib/junit.jar"/>
+	<classpathentry kind="lib" path="lib/mailapi.jar"/>
+	<classpathentry kind="lib" path="lib/pop3.jar"/>
+	<classpathentry kind="lib" path="lib/smtp.jar"/>
+	<classpathentry kind="output" path="target/classes"/>
+</classpath>

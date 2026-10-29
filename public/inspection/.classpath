@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/aopalliance.jar"/>
+	<classpathentry kind="lib" path="lib/bcel.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
+	<classpathentry kind="lib" path="lib/guice-2.0-snapshot20090814.jar"/>
+	<classpathentry kind="lib" path="lib/lw-common.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

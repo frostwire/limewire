@@ -1,0 +1,9 @@
+
+COM
+Wrap with GnucCOM
+
+DLL
+The easiest way to inlucde DLL functionality in a project. 
+
+Static Lib
+Make sure STATIC is defined.

@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<!DOCTYPE plugin PUBLIC "-//JPF//Java Plug-in Manifest 1.0" "http://jpf.sourceforge.net/plugin_1_0.dtd">
+
+<plugin id="org.limewire.plugin.core" version="1.0.0" class="org.limewire.plugin.core.CorePlugin">
+	<runtime>
+		<library id="limewire-core" path="." type="code">
+			<export prefix="*" />
+		</library>
+	</runtime>
+</plugin>

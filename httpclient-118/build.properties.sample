@@ -1,0 +1,89 @@
+# ===================================================================
+# Sample build.properties file
+#
+# Make a copy this file named "build.properties",
+# and customize it to your environment and preferences.
+#
+# $Id: build.properties.sample,v 1.1.1.1 2003/10/30 20:32:58 sberlin Exp $
+# ===================================================================
+
+# ===================================================================
+# Classpath Settings
+# ===================================================================
+
+# The base directory for libraries used by HttpClient
+lib.dir=./lib
+
+# Commons Logging (See http://jakarta.apache.org/commons/logging.html)
+# Required to compile and run.
+commons-logging.jar=${lib.dir}/commons-logging.jar
+
+# JUnit Version 3.8(+?) (see http://www.junit.org/ )
+# Required to compile and run the unit tests.
+junit.jar=${lib.dir}/junit.jar
+
+# A JSSE implementation (see http://java.sun.com/products/jsse):
+# Required to compile, only needed at runtime if you're using HTTPS.
+base.path=/java
+jsse.home=${base.path}/jsse-1.0.3_01
+jsse.lib=${jsse.home}/lib
+jcert.jar=${jsse.lib}/jcert-1.0.3_01.jar
+jnet.jar=${jsse.lib}/jnet-1.0.3_01.jar
+jsse.jar=${jsse.lib}/jsse-1.0.3_01.jar
+
+# A JCE implementation (see http://java.sun.com/products/jce):
+# Required to compile, only needed at runtime if you're using HTTPS.
+jce.lib=${base.path}/Programs/sun/jce1.2.2/lib
+jce.jar=${jce.lib}/jce-1.2.2.jar
+
+# The Servlet API (See http://java.sun.com/products/servlet)
+# Required to compile the test webapp.
+servlet.jar=${base.path}/jakarta-tomcat/lib/servlet.jar
+
+# ===================================================================
+# Test Properties - used to configure the test cases
+# ===================================================================
+
+# httpclient.log
+#  - indicates which log writer to use (optional)
+
+httpclient.test.log=org.apache.commons.logging.impl.SimpleLog
+#httpclient.test.log=org.apache.commons.logging.impl.Log4JCategoryLog
+#httpclient.test.log=org.apache.commons.logging.impl.NoOpLog
+
+# httpclient.test.*
+#  - various properties used to override defaults within
+#    the JUnit tests
+
+# the host name for the "local" webserver
+#httpclient.test.localHost=127.0.0.1
+
+# the port for the "local" webserver
+#httpclient.test.localPort=8080
+
+# the context to which the test webapp is deployed
+#httpclient.test.webappContext=httpclienttest
+
+# ===================================================================
+# Build Properties
+# ===================================================================
+
+# where to build the test-webapp to
+#test-webapp.dest=${dist.home}
+#test-webapp.dest=/java/jakarta-tomcat-4.0-b7/webapps
+
+
+# ===================================================================
+# Anakia Properties (used by the xdoc target)
+# ===================================================================
+
+velocity.jar=/cvs/jakarta/jakarta-site2/lib/velocity-1.3-dev.jar
+jdom.jar=/cvs/jakarta/jakarta-site2/lib/jdom-b7.jar
+xerces.jar=/cvs/jakarta/jakarta-site2/lib/xerces-1.4.3.jar
+
+# Note: Building the docs won't work if you have an earlier version of
+# velocity.jar (eg 1.0.1) than that specified here. A symptom of this is when
+# your generated HTML contains "[Element: <p/>]"
+
+# set this property to keep xdoc from fetching .vsl file from cvs
+#localstylesheet=true

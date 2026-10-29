@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup class="com.limewire.eclipse.plugin.Startup"/>
+   </extension>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="false"
+            id="com.limewire.eclipse.plugin.fisheye.objectContribution1"
+            objectClass="org.eclipse.jdt.core.IJavaElement">
+         <menu
+               id="com.limewire.eclipse.plugin.fisheye.menu1"
+               label="Fisheye">
+            <separator name="com.limewire.eclipse.plugin.fisheye.group1"/>
+         </menu>
+         <action
+               class="com.limewire.eclipse.plugin.fisheye.popup.actions.SearchFisheye"
+               enablesFor="1"
+               id="com.limewire.eclipse.plugin.fisheye.searchFisheye"
+               label="Search Fisheye"
+               menubarPath="com.limewire.eclipse.plugin.fisheye.menu1/group1"
+               tooltip="Opens the FishEye search results for this file"/>
+         <action
+               class="com.limewire.eclipse.plugin.fisheye.popup.actions.OpenFisheye"
+               enablesFor="1"
+               id="com.limewire.eclipse.plugin.fisheye.openFisheye"
+               label="Open Fisheye"
+               menubarPath="com.limewire.eclipse.plugin.fisheye.menu1/group1"
+               tooltip="Opens the FishEye page for this file"/>
+         <action
+               class="com.limewire.eclipse.plugin.fisheye.popup.actions.BrowseFisheye"
+               enablesFor="*"
+               id="com.limewire.eclipse.plugin.fisheye.browseFisheye"
+               label="Browse Fisheye"
+               menubarPath="com.limewire.eclipse.plugin.fisheye.menu1/group2"
+               tooltip="Browses the FishEye server"/>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.limewire.eclipse.plugin.fisheye.preferences.FisheyeGlassesPreferences"
+            id="com.limewire.eclipse.plugin.fisheye.preferences.fisheyeGlassesPreferences"
+            name="FisheyeGlasses"/>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer class="com.limewire.eclipse.plugin.fisheye.preferences.PreferenceInitializer"/>
+   </extension>
+
+</plugin>

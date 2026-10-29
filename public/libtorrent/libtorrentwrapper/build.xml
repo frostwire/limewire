@@ -1,0 +1,83 @@
+<!-- top level ant file -->
+<project name="libtorrentwrapper" default="dist" basedir=".">
+
+	<!-- 
+		Create a build.properties file with all the proper values. 
+		Using this instead of making all the values in the build.xml, 
+		so we can commit and keep the file public.
+	-->
+	
+	<property file="build.properties"/>
+	
+	<property name="dist.dir" value="dist" />
+
+	<property name="windows.host" value="somehost" />
+	<property name="windows.build.dir" value="somebuilddir" />
+	<property name="windows.user" value="user" />
+	<property name="windows.keyfile" location="somekeyfile" />
+	
+	<property name="linux.host" value="somehost" />
+	<property name="linux.build.dir" value="somebuilddir" />
+	<property name="linux.user" value="user" />
+	<property name="linux.keyfile" location="somekeyfile" />
+	
+	<property name="osx.host" value="somehost" />
+	<property name="osx.build.dir" value="somebuilddir" />
+	<property name="osx.user" value="user" />
+	<property name="osx.keyfile" location="somekeyfile" />
+
+	<target name="init">
+		<mkdir dir="${dist.dir}"/>
+	</target>
+	
+	<target name="clean">
+		<delete dir="${dist.dir}"/>
+	</target>
+	
+	<target name="windows" depends="init">
+		<exec dir="." executable="rsync" failonerror="true" >  
+			<arg value="-r" />  
+			<arg value="-v" />
+			<arg value="--rsh=ssh -i ${windows.keyfile}" />
+			<arg value="." />
+			<arg value="${windows.user}@${windows.host}:${windows.build.dir}" />  
+		</exec>
+		<sshexec host="${windows.host}" username="${windows.user}" passphrase="" keyfile="${windows.keyfile}" trust="yes" command="cd ${windows.build.dir}; cd ${windows.build.dir};chmod +x build.bat; ./build.bat" />
+		<scp username="${windows.user}" passphrase="" keyfile="${windows.keyfile}" trust="yes" file="${windows.user}@${windows.host}:${windows.build.dir}/libtorrentwrapper.dll"  localTofile="${dist.dir}/torrent-wrapper.dll" />
+	</target>
+
+	<target name="linux" depends="init">
+		<exec dir="." executable="rsync" failonerror="true" >  
+			<arg value="-r" />  
+			<arg value="-v" />
+			<arg value="--rsh=ssh -i ${linux.keyfile}" />
+			<arg value="." />
+			<arg value="${linux.user}@${linux.host}:${linux.build.dir}" />  
+		</exec>
+		<sshexec host="${linux.host}" username="${linux.user}" passphrase="" keyfile="${linux.keyfile}" trust="yes" command="cd ${linux.build.dir};make -f Makefile clean library"/>
+		<scp username="${linux.user}" passphrase="" keyfile="${linux.keyfile}" trust="yes" file="${linux.user}@${linux.host}:${linux.build.dir}/libtorrent-wrapper.so" todir="${dist.dir}" />
+	</target>
+
+	<target name="osx" depends="init">
+		<exec dir="." executable="rsync" failonerror="true" >  
+			<arg value="-r" />  
+			<arg value="-v" />
+			<arg value="--rsh=ssh -i ${osx.keyfile}" />
+			<arg value="." />
+			<arg value="${osx.user}@${osx.host}:${osx.build.dir}" />  
+		</exec>
+		<sshexec host="${osx.host}" username="${osx.user}" passphrase="" keyfile="${osx.keyfile}" trust="yes" command="cd ${osx.build.dir};make -f Makefile.osx clean library"/>
+		<scp username="${osx.user}" passphrase="" keyfile="${osx.keyfile}" trust="yes" file="${osx.user}@${osx.host}:${osx.build.dir}/libtorrent-wrapper.dylib" todir="${dist.dir}" />
+	</target>
+
+	<target name="dist" depends="windows, linux, osx">
+		
+	</target>
+	
+	<target name="copylib">
+		<copy file="${dist.dir}/torrent-wrapper.dll" todir="${basedir}/../limewire/lib/native/windows"/>
+		<copy file="${dist.dir}/libtorrent-wrapper.dylib" todir="${basedir}/../limewire/lib/native/osx"/>
+		<copy file="${dist.dir}/libtorrent-wrapper.so" todir="${basedir}/../limewire/lib/native/linux"/>
+	</target>
+
+</project>

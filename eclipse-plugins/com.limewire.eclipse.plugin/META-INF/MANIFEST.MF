@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Limewire Eclipse Plug-in
+Bundle-SymbolicName: com.limewire.eclipse.plugin;singleton:=true
+Bundle-Version: 1.0.3
+Bundle-Activator: com.limewire.eclipse.plugin.LimeWirePlugin
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.debug.core,
+ org.eclipse.jdt.launching,
+ org.eclipse.jdt.junit,
+ org.eclipse.ui.browser,
+ org.eclipse.jdt.core,
+ org.eclipse.team.core,
+ org.eclipse.team.cvs.core,
+ org.eclipse.jdt.junit.runtime,
+ org.eclipse.core.resources
+Eclipse-LazyStart: true

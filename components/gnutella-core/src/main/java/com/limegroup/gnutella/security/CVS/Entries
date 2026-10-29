@@ -1,0 +1,22 @@
+/.cvsignore/1.1/Fri Nov  8 16:34:34 2002//
+/Certificate.java/1.2/Wed Feb 17 16:40:46 2010//
+/CertificateImpl.java/1.2/Wed Feb 17 16:40:46 2010//
+/CertificateParser.java/1.2/Wed Feb 17 16:40:46 2010//
+/CertificateParserImpl.java/1.2/Wed Feb 17 16:40:46 2010//
+/CertificateProvider.java/1.3/Fri Feb 26 20:51:11 2010//
+/CertificateProviderImpl.java/1.3/Fri Feb 26 20:51:11 2010//
+/CertificateVerifier.java/1.3/Fri Feb 26 20:51:11 2010//
+/CertificateVerifierImpl.java/1.2/Wed Feb 17 16:40:46 2010//
+/CertifiedMessageSourceType.java/1.3/Wed Feb 17 17:06:16 2010//
+/CertifiedMessageVerifier.java/1.2/Wed Feb 17 16:40:46 2010//
+/CertifiedMessageVerifierImpl.java/1.3/Fri Feb 26 20:51:11 2010//
+/DefaultSignedMessageDataProvider.java/1.2/Fri Feb 26 20:51:11 2010//
+/FileCertificateReader.java/1.2/Wed Feb 17 16:40:46 2010//
+/FileCertificateReaderImpl.java/1.2/Wed Feb 17 16:40:46 2010//
+/HttpCertificateReader.java/1.2/Wed Feb 17 16:40:46 2010//
+/HttpCertificateReaderImpl.java/1.3/Fri Feb 26 20:51:11 2010//
+/LimeWireSecurityModule.java/1.2/Wed Feb 17 16:40:46 2010//
+/MerkleTree.java/1.3/Mon Jun  8 19:57:54 2009//
+/NullCertificate.java/1.3/Thu Feb 18 18:30:46 2010//
+/Tiger.java/1.5/Mon Jun  8 19:57:54 2009//
+D

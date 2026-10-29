@@ -1,0 +1,18 @@
+/AbstractAction.java/1.6/Wed May  5 23:08:48 2010//
+/AbstractSelectionRequiredTextAction.java/1.1/Tue Aug 26 20:49:51 2008//
+/AbstractTextAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/ActionKeys.java/1.1/Wed Oct  8 17:32:59 2008//
+/BitziLookupAction.java/1.3/Tue Feb 16 12:28:04 2010//
+/CopyAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/CopyAllAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/CutAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/DelayedMenuItemCreator.java/1.1/Tue Jan 19 19:51:39 2010//
+/DeleteAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/ItemNotifyable.java/1.1/Wed Aug 27 21:39:45 2008//
+/MnemonicMenu.java/1.8/Tue Jan 19 19:51:39 2010//
+/PasteAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/PopupDecider.java/1.1/Wed Aug 27 17:45:41 2008//
+/PopupUtil.java/1.3/Wed Aug 27 21:39:45 2008//
+/SelectAllAction.java/1.2/Sun Sep 28 20:20:23 2008//
+/UrlAction.java/1.11/Thu Feb 11 21:20:27 2010//
+D

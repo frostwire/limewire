@@ -1,0 +1,18 @@
+To add a new Junit TestCase to one of the "standard" Suites,
+you should add it to one (and only one) of the following files:
+
+ * TestNoHost.java
+    - use this file if the test has no external dependencies
+      (i.e., it runs entirely within the JUnit VM)
+
+ * TestExternalHost.java
+    - use this file if the test depends upon a connection to
+      the public Internet
+
+ * TestLocalHost.java
+    - use this file if the test depends upon a local webserver
+      (running on ${httpclient.test.localHost}/
+      ${httpclient.test.localPort})
+
+ * TestWebapp.java
+    - use this file if the test depends upon the test webapp

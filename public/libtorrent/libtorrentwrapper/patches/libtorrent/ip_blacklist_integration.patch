@@ -1,0 +1,90 @@
+diff -cr include/libtorrent/ip_filter.hpp include/libtorrent/ip_filter.hpp
+*** include/libtorrent/ip_filter.hpp	2009-08-30 03:34:22.000000000 -0400
+--- include/libtorrent/ip_filter.hpp	2009-10-29 12:07:30.000000000 -0400
+***************
+*** 266,271 ****
+--- 266,277 ----
+  
+  }
+  
++ class TORRENT_EXPORT ip_filter_callback
++ {
++ public:
++ 	virtual int callback(address const& addr) = 0;
++ };
++ 
+  class TORRENT_EXPORT ip_filter
+  {
+  public:
+***************
+*** 275,285 ****
+--- 281,295 ----
+  		blocked = 1
+  	};
+  
++ 	ip_filter();
++ 
+  	// both addresses MUST be of the same type (i.e. both must
+  	// be either IPv4 or both must be IPv6)
+  	void add_rule(address first, address last, int flags);
+  	int access(address const& addr) const;
+  
++ 	void set_filter_callback(ip_filter_callback *callback);
++ 
+  	typedef boost::tuple<std::vector<ip_range<address_v4> >
+  		, std::vector<ip_range<address_v6> > > filter_tuple_t;
+  	
+***************
+*** 291,296 ****
+--- 301,308 ----
+  
+  	detail::filter_impl<address_v4::bytes_type> m_filter4;
+  	detail::filter_impl<address_v6::bytes_type> m_filter6;
++ 
++ 	ip_filter_callback *m_filter_callback_ptr;
+  };
+  
+  class TORRENT_EXPORT port_filter
+diff -cr src/ip_filter.cpp src/ip_filter.cpp
+*** src/ip_filter.cpp	2008-10-04 21:41:56.000000000 -0400
+--- src/ip_filter.cpp	2009-10-29 12:06:31.000000000 -0400
+***************
+*** 39,44 ****
+--- 39,49 ----
+  
+  namespace libtorrent
+  {
++ 	ip_filter::ip_filter()
++ 	{
++ 		m_filter_callback_ptr = NULL;	
++ 	}
++ 
+  	void ip_filter::add_rule(address first, address last, int flags)
+  	{
+  		if (first.is_v4())
+***************
+*** 57,68 ****
+--- 62,84 ----
+  
+  	int ip_filter::access(address const& addr) const
+  	{
++ 		if (m_filter_callback_ptr != NULL) {
++ 			int ret = m_filter_callback_ptr->callback(addr);
++ 			if (ret == blocked) {
++ 				return ret;			
++ 			}		
++ 		}
+  		if (addr.is_v4())
+  			return m_filter4.access(addr.to_v4().to_bytes());
+  		TORRENT_ASSERT(addr.is_v6());
+  		return m_filter6.access(addr.to_v6().to_bytes());
+  	}
+  
++ 	void ip_filter::set_filter_callback(ip_filter_callback *callback)
++ 	{
++ 		m_filter_callback_ptr = callback;
++ 	}
++ 
+  	ip_filter::filter_tuple_t ip_filter::export_filter() const
+  	{
+  		return boost::make_tuple(m_filter4.export_filter<address_v4>()

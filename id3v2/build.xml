@@ -1,0 +1,34 @@
+<project name = "id3v2" default="make" basedir=".">
+
+  <!-- default classpath for javac.  it is set as the user's CLASSPATH
+       environment with the jar files necessary for compilation appended. -->
+  <path id="default.classpath" >
+    <fileset dir="../lib/jars" includes="*.jar, *.zip"/>
+  </path>
+
+  <target name="jar">
+    <delete file="id3v2.jar"/>
+    <jar jarfile="id3v2.jar"
+         basedir="bin"
+	     includes="**/*.class"
+		 excludes=""
+         filesonly="true">     
+    </jar>
+  </target>
+ 
+  <target name="make">
+    <javac srcdir="src/java" destdir="bin" debug="yes" 
+           target="1.3" source="1.3"
+           optimize="yes" nowarn="yes" deprecation="yes">
+      <classpath refid="default.classpath" />           
+    </javac>
+  </target>
+ 
+  <target name="clean">
+    <delete>
+      <fileset dir="." includes="**/*.class"/>
+      <fileset dir="." includes="*.mp3"/>
+    </delete>
+  </target>
+
+</project>

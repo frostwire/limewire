@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Eclipse Gettext Plug-in
+Bundle-SymbolicName: org.limewire.eclipse.gettext;singleton:=true
+Bundle-Version: 1.0.0
+Bundle-Activator: org.limewire.eclipse.gettext.GettextPlugin
+Bundle-Vendor: Lime Wire LLC
+Import-Package: org.osgi.framework;version="1.3.0"
+Require-Bundle: org.eclipse.ltk.core.refactoring,
+ org.eclipse.ltk.ui.refactoring,
+ org.eclipse.ui,
+ org.eclipse.jdt.ui,
+ org.eclipse.jface.text,
+ org.eclipse.jdt.core,
+ org.eclipse.core.runtime,
+ org.eclipse.ui.editors,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-ClassPath: lib/gettext-commons/gettext-commons-0.9.1.jar,
+ bin/

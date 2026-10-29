@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GnucDNA", "..\GnucDNAR3\GnucDNA.vcproj", "{B41712E7-6E7A-4707-9D65-DAB07A52F26C}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptlib", "..\Cryptlib\cryptlib.vcproj", "{C7B28FE6-0757-44B6-A92F-407F22AB88EE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GnucDNAHandler", "..\GnucDNAHandler\GnucDNAHandler.vcproj", "{10EA46A8-3538-45E5-8ECB-CF37525584AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C7B28FE6-0757-44B6-A92F-407F22AB88EE} = {C7B28FE6-0757-44B6-A92F-407F22AB88EE}
+		{B41712E7-6E7A-4707-9D65-DAB07A52F26C} = {B41712E7-6E7A-4707-9D65-DAB07A52F26C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StubInstaller", "..\StubInstaller\StubInstaller.vcproj", "{451D8B2C-1C39-4E50-840F-DB43BD2FBFE0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5513516E-A402-4944-B37F-148A3FD8E475} = {5513516E-A402-4944-B37F-148A3FD8E475}
+		{10EA46A8-3538-45E5-8ECB-CF37525584AF} = {10EA46A8-3538-45E5-8ECB-CF37525584AF}
+		{B41712E7-6E7A-4707-9D65-DAB07A52F26C} = {B41712E7-6E7A-4707-9D65-DAB07A52F26C}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XML", "..\XML\XML.vcproj", "{5513516E-A402-4944-B37F-148A3FD8E475}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{B41712E7-6E7A-4707-9D65-DAB07A52F26C}.Debug.ActiveCfg = Debug|Win32
+		{B41712E7-6E7A-4707-9D65-DAB07A52F26C}.Debug.Build.0 = Debug|Win32
+		{B41712E7-6E7A-4707-9D65-DAB07A52F26C}.Release.ActiveCfg = Release|Win32
+		{B41712E7-6E7A-4707-9D65-DAB07A52F26C}.Release.Build.0 = Release|Win32
+		{C7B28FE6-0757-44B6-A92F-407F22AB88EE}.Debug.ActiveCfg = Debug|Win32
+		{C7B28FE6-0757-44B6-A92F-407F22AB88EE}.Debug.Build.0 = Debug|Win32
+		{C7B28FE6-0757-44B6-A92F-407F22AB88EE}.Release.ActiveCfg = Release|Win32
+		{C7B28FE6-0757-44B6-A92F-407F22AB88EE}.Release.Build.0 = Release|Win32
+		{10EA46A8-3538-45E5-8ECB-CF37525584AF}.Debug.ActiveCfg = Debug|Win32
+		{10EA46A8-3538-45E5-8ECB-CF37525584AF}.Debug.Build.0 = Debug|Win32
+		{10EA46A8-3538-45E5-8ECB-CF37525584AF}.Release.ActiveCfg = Release|Win32
+		{10EA46A8-3538-45E5-8ECB-CF37525584AF}.Release.Build.0 = Release|Win32
+		{451D8B2C-1C39-4E50-840F-DB43BD2FBFE0}.Debug.ActiveCfg = Debug|Win32
+		{451D8B2C-1C39-4E50-840F-DB43BD2FBFE0}.Debug.Build.0 = Debug|Win32
+		{451D8B2C-1C39-4E50-840F-DB43BD2FBFE0}.Release.ActiveCfg = Release|Win32
+		{451D8B2C-1C39-4E50-840F-DB43BD2FBFE0}.Release.Build.0 = Release|Win32
+		{5513516E-A402-4944-B37F-148A3FD8E475}.Debug.ActiveCfg = Debug|Win32
+		{5513516E-A402-4944-B37F-148A3FD8E475}.Debug.Build.0 = Debug|Win32
+		{5513516E-A402-4944-B37F-148A3FD8E475}.Release.ActiveCfg = Release|Win32
+		{5513516E-A402-4944-B37F-148A3FD8E475}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

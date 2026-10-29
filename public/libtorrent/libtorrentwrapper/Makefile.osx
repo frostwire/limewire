@@ -1,0 +1,47 @@
+# CXXFLAGS = -O2 -g -Wall -fmessage-length=0 
+CXXFLAGS = -O2 -Wall
+
+LIB_DIR = lib/osx
+LIBS = -l ssl -l crypto -l torrent-xgcc40-0_14_6 -l boost_system-xgcc40-mt-1_39 -l boost_filesystem-xgcc40-mt-1_39 -l boost_thread-xgcc40-mt-1_39  
+LIBRARY32 = libtorrent-wrapper32.dylib
+LIBRARY64 = libtorrent-wrapper64.dylib
+LIBRARY = libtorrent-wrapper.dylib
+TARGET = libtorrent-wrapper.out
+OPTIONS = -DOSX -DNDEBUG -DTORRENT_USE_OPENSSL -DTORRENT_DISABLE_INVARIANT_CHECKS -DUNICODE -D_UNICODE -DTORRENT_NO_DEPRECATE -DBOOST_ALL_NO_LIB -DTORRENT_DISABLE_GEO_IP
+LINKOPTIONS = -dynamiclib
+OPTIONS32 = -m32 $(OPTIONS)
+LINKOPTIONS32 = -m32 $(LINKOPTIONS)
+OPTIONS64 = -m64 $(OPTIONS)
+LINKOPTIONS64 = -m64 $(LINKOPTIONS)
+
+OBJS = libtorrentwrapper.o
+INCLUDES = -I include 
+
+compile32:	
+	${CXX} $(CXXFLAGS) -c src/libtorrentwrapper.cpp $(OPTIONS32) $(INCLUDES)
+
+compile64:	
+	${CXX} $(CXXFLAGS) -c src/libtorrentwrapper.cpp $(OPTIONS64) $(INCLUDES)
+
+all: library
+
+library32: compile32
+	${CXX} $(CXXFLAGS) -o $(LIBRARY32) $(LINKOPTIONS32) $(OBJS) -L$(LIB_DIR) $(LIBS)
+
+library64: compile64
+	${CXX} $(CXXFLAGS) -o $(LIBRARY64) $(LINKOPTIONS64) $(OBJS) -L$(LIB_DIR) $(LIBS)
+
+library: library32 library64
+	lipo -create libtorrent-wrapper*.dylib -output libtorrent-wrapper.dylib
+
+copylib: library
+	strip $(LIBRARY)
+	cp $(LIBRARY) ../../../limewire/lib/native/osx/
+
+unzip : 
+	unzip include
+
+clean:
+	rm -f $(OBJS) $(TARGET) $(LIBRARY) $(LIBRARY32) $(LIBRARY64) a.out
+
+

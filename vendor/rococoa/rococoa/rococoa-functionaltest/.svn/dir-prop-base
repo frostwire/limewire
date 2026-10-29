@@ -1,0 +1,10 @@
+K 10
+svn:ignore
+V 45
+.classpath
+.project
+.settings
+*.dylib
+target
+
+END

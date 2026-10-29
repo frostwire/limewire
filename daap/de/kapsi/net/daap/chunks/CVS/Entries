@@ -1,0 +1,25 @@
+/.cvsignore/1.2/Wed Aug 11 20:34:09 2004//
+/AbstractChunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/BooleanChunk.java/1.4/Sun Mar 19 02:32:25 2006//
+/ByteChunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/Chunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/ChunkFactory.java/1.3/Wed Jul  5 12:31:28 2006/-kk/
+/ContainerChunk.java/1.8/Wed Jul  5 12:31:28 2006//
+/ContentCode.java/1.5/Sun Mar 19 02:32:25 2006//
+/ContentCodesResponseImpl.java/1.3/Sun Mar 19 02:32:25 2006//
+/DateChunk.java/1.7/Wed Jul  5 12:31:28 2006//
+/IntChunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/LongChunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/SByteChunk.java/1.3/Sat Mar 25 01:03:26 2006/-kk/
+/SIntChunk.java/1.2/Sun Mar 19 02:32:25 2006/-kk/
+/SLongChunk.java/1.2/Sun Mar 19 02:32:25 2006/-kk/
+/SShortChunk.java/1.3/Sat Mar 25 01:03:26 2006/-kk/
+/ShortChunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/StringChunk.java/1.5/Sun Mar 19 02:32:25 2006//
+/UByteChunk.java/1.3/Sat Mar 25 01:03:26 2006/-kk/
+/UIntChunk.java/1.3/Sat Mar 25 01:03:26 2006/-kk/
+/ULongChunk.java/1.2/Sun Mar 19 02:32:25 2006/-kk/
+/UShortChunk.java/1.3/Sat Mar 25 01:03:26 2006/-kk/
+/VersionChunk.java/1.9/Wed Jul  5 12:31:28 2006//
+/package.html/1.1/Sun Aug 15 10:22:57 2004//
+D

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa
+END
+RococoaAbstractClassTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/RococoaAbstractClassTest.java
+END
+FoundationMainThreadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/240/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/FoundationMainThreadTest.java
+END
+NSAutoreleasePoolTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/NSAutoreleasePoolTest.java
+END
+FoundationMemoryAssumptionsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/FoundationMemoryAssumptionsTest.java
+END
+NSClassTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/NSClassTest.java
+END
+FoundationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/183/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/FoundationTest.java
+END
+StructsInObjectsTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/165/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/StructsInObjectsTest.java
+END
+FoundationRetainReleaseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/192/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/FoundationRetainReleaseTest.java
+END
+RococoaObjectOwnershipTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/RococoaObjectOwnershipTest.java
+END
+TestStructOfStruct.java
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/TestStructOfStruct.java
+END
+RococoaMainThreadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/RococoaMainThreadTest.java
+END
+JavaProxyTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/JavaProxyTest.java
+END
+TestStruct.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/TestStruct.java
+END
+RococoaTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/317/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/RococoaTest.java
+END
+FoundationStructureReturnTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/161/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/FoundationStructureReturnTest.java
+END
+NSAutoreleasePoolThreadTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/331/trunk/rococoa/rococoa-core/src/test/java/org/rococoa/NSAutoreleasePoolThreadTest.java
+END

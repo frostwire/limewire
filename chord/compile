@@ -1,0 +1,1 @@
+javac -source 1.4 -classpath .:../core:../core/lib/collections.jar edu/ucr/cs/chord/*.java edu/ucr/cs/chord/filelookup/*.java

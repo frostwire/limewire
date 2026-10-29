@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.rococoa</groupId>
+  <artifactId>rococoa</artifactId>
+  <packaging>pom</packaging>
+  <version>${parent.version}</version>
+  <name>Rococoa</name>
+  <url>http://www.rococoa.org</url>
+  
+  <parent>
+    <groupId>org.rococoa</groupId>
+    <artifactId>rococoa-parent</artifactId>
+    <version>0.5</version>
+	<relativePath>rococoa-parent</relativePath>
+  </parent>
+  
+  <modules>
+    <module>rococoa-parent</module>
+    <module>rococoa-core</module>
+    <module>rococoa-auto</module>
+	<module>rococoa-cocoa</module>
+    <module>rococoa-contrib</module>
+    <module>rococoa-functionaltest</module>
+	
+  </modules>
+  
+</project>

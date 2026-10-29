@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="rococoa/rococoa-cocoa/src/main/java"/>
+	<classpathentry kind="src" path="rococoa/rococoa-cocoa/src/test/java"/>
+	<classpathentry kind="src" path="rococoa/rococoa-contrib/src/main/java"/>
+	<classpathentry kind="src" path="rococoa/rococoa-contrib/src/test/java"/>
+	<classpathentry kind="src" path="rococoa/rococoa-core/src/main/java"/>
+	<classpathentry kind="src" path="rococoa/rococoa-core/src/test/java"/>
+	<classpathentry kind="src" path="rococoa/rococoa-functionaltest/src/test/java"/>
+	<classpathentry kind="lib" path="rococoa/lib/jna.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="rococoa/lib/jna-3.2.2.jar"/>
+	<classpathentry kind="lib" path="rococoa/lib/slf4j-api-1.5.8.jar"/>
+	<classpathentry kind="lib" path="rococoa/lib/slf4j-jdk14-1.5.8.jar"/>
+	<classpathentry kind="lib" path="rococoa/lib/asm-3.1.jar"/>
+	<classpathentry kind="lib" path="rococoa/lib/cglib-2.2.jar"/>
+	<classpathentry kind="lib" path="rococoa/lib/junit-4.7.jar"/>
+	<classpathentry kind="output" path="rococoa/rococoa-core/target/test-classes"/>
+</classpath>

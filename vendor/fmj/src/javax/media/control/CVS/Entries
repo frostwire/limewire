@@ -1,0 +1,21 @@
+/BitRateControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/BufferControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/FormatControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/FrameGrabbingControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/FramePositioningControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/FrameProcessingControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/FrameRateControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/H261Control.java/1.1/Thu Oct  8 19:49:41 2009//
+/H263Control.java/1.1/Thu Oct  8 19:49:41 2009//
+/KeyFrameControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/MonitorControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/MpegAudioControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/PacketSizeControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/PortControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/QualityControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/RtspControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/SilenceSuppressionControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/StreamWriterControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/TrackControl.java/1.1/Thu Oct  8 19:49:41 2009//
+/package.html/1.1/Thu Oct  8 19:49:41 2009//
+D

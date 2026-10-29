@@ -1,0 +1,68 @@
+<project name="Gnutella" default="chord" basedir=".">
+
+<!-- set global properties for this basedir -->
+<property name="basedir"     value="."/>
+
+<!-- constants -->
+<property name="DEBUG" value="yes"/>  
+<property name="OPTIMIZE" value="no"/>  
+<property name="DEPRECATION" value="yes"/>
+
+<!-- default classpath for javac.  it is set as the user's CLASSPATH
+     environment with the jar files necessary for compilation appended. -->
+<path id="default.classpath" >
+  <pathelement location="../core/lib/collections.jar" />
+  <pathelement location="../core/lib/xerces.jar" />
+  <pathelement location="../core/lib/ui.jar" />
+  <pathelement location="../core" />
+</path>
+
+
+<!-- Initialization stuff -->
+<target name="init">
+<!-- we dont do much here right now, but may do later -->
+	<tstamp/>
+</target>
+
+
+<!-- everything -->
+<target name="all" depends="init">
+	<javac debug="${DEBUG}" optimize="${OPTIMIZE}"
+		srcdir="${basedir}" destdir="${basedir}"
+		excludes="${unused}/**"
+	>
+      <classpath refid="default.classpath" />
+    </javac>
+</target>
+
+<!-- Build chord -->
+<target name="chord" depends="init">
+	<javac debug="${DEBUG}" optimize="${OPTIMIZE}" deprecation="${DEPRECATION}"
+		srcdir="${basedir}" destdir="${basedir}"
+		excludes="${tests}**"
+		source="1.4">
+    <classpath refid="default.classpath" />
+    </javac>
+</target>
+
+<!-- CLEAN -->
+<target name="clean">
+	<delete>
+		<fileset dir="${basedir}/edu" includes="**/*.class"/>
+	</delete>
+</target>
+
+</project>
+
+
+
+
+
+
+
+
+
+
+
+
+

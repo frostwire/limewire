@@ -1,0 +1,4 @@
+.DS_Store
+.ivy2/
+# 134 MB prebuilt static library, over GitHub's 100 MB file limit (see README.md)
+public/libtorrent/libtorrentwrapper/lib/osx/libtorrent-xgcc40-0_14_6.a

@@ -1,0 +1,26 @@
+BUILDING
+========
+
+Make a User Variable 'ANT_LIB' and have it include all the Apache Ant variables.
+
+
+RUNNING
+=======
+
+Rename src/main/xml/user.properties-FillInAndRenameTo-user.properties to
+src/main/xml/user.properties and fill in the details.
+
+These are the options:
+
+  -help                        prints help
+  -email <String>              set the email to which the message from the translation people goes
+  -passwordEmail <String>      password for the email above
+  -username <String>           username for launchpad.net
+  -password <String>           password for the email above
+  -server <String>             mail server to use; defaults to cyrus.limewire.com
+  -group <String>              group on launchpad.net -- i.e. the limewire in
+                               https://translations.launchpad.net/limewire/trunk/+pots/limewire/ja
+                               this allows other folks to use it; defaults to limewire
+  -gui                         uses the GUI version 
+  
+You can see these by passing -help to the main class com.limewire.translations.Main.
